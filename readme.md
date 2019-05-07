@@ -2,7 +2,7 @@
 ### Aidan Jared, Derek Lorenzen, Nathan James
 
 ## EDA
-We first did some exploratory data analysis to understand the data structure and what the important features are. The [included markdown](group.md) gave good descriptions of the data which speed up the EDA. The data set was made up of 11 features and that an anonymized users churned if they had not used the rideshare for more than 30 days. We found that there was about 33% `active` users and 66% `churned users`. With this information we moved onto the data cleaning.
+We first did some exploratory data analysis to understand the data structure and what the important features are. The [included markdown](group.md) gave good descriptions of the data which speed up the EDA. The data set was made up of 11 features and that an anonymized users churned if they had not used the rideshare for more than 30 days. We found that there was about 33% `active` users and 66% user `churn`. With this information we moved onto the data cleaning.
 
 ## Cleaning
 For the cleaning our first dessision was to remove the surge_pct feature because there was also a surge_avg column and we felt that including both features would have produced multicolinarity in the model which is never desired. We developed a cleaning function in order to clean both the training and testing data the same way.
